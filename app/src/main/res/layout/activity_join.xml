@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@color/teal_200"
+    android:background="@color/cardview_shadow_start_color"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".view.auth.JoinActivity">
@@ -72,11 +72,12 @@
             android:layout_height="10dp"/>
 
         <TextView
+            android:id="@+id/tvLinkLogin"
             android:gravity="center"
             android:textColor="@color/purple_500"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="로그인 하러가기" />
+            android:text="로그인 하시겠어요?" />
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 

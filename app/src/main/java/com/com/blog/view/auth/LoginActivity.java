@@ -80,11 +80,17 @@ public class LoginActivity extends AppCompatActivity implements InitActivity {
                     startActivity(intent);
                 }
 
+
                 @Override
                 public void onFailure(Call<CMRespDto<User>> call, Throwable t) {
                     t.printStackTrace();
                 }
             });
+        });
+
+        tvLinkJoin.setOnClickListener((v)->{
+            Intent intent = new Intent(mContext, JoinActivity.class);
+            startActivity(intent);
         });
     }
 

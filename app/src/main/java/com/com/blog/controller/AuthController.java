@@ -1,6 +1,7 @@
 package com.com.blog.controller;
 
 import com.com.blog.controller.dto.CMRespDto;
+import com.com.blog.controller.dto.JoinDto;
 import com.com.blog.controller.dto.LoginDto;
 import com.com.blog.model.User;
 import com.com.blog.service.PostService;
@@ -14,5 +15,8 @@ public class AuthController {
 
     public Call<CMRespDto<User>> login(LoginDto loginDto){
         return userService.login(loginDto);
+    }
+    public Call<CMRespDto<User>> join(JoinDto joinDto){
+        return userService.join(joinDto);
     }
 }
